@@ -35,7 +35,7 @@ class MainActivity : ComponentActivity() {
                 is MainUiAction.DisableNotification -> NotificationMatcherWorker.cancel(applicationContext, action.matchDomain)
                 is MainUiAction.EnableNotification -> NotificationMatcherWorker.start(applicationContext, action.matchDomain)
                 is MainUiAction.MatchesNotFound -> TODO()
-                MainUiAction.Unexpected -> TODO()
+                MainUiAction.Unexpected -> //TODO()
             }
         }
     }
